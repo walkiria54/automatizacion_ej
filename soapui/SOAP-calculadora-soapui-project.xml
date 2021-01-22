@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="a29b47bd-3228-4721-9dc0-ebe5ee039248" activeEnvironment="Default" name="SOAP calculadora" resourceRoot="" soapui-version="5.6.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="0dcafdc2-7bb5-448d-ad51-d0a0fb8eb6ea" wsaVersion="NONE" name="CalculatorSoap11Binding" type="wsdl" bindingName="{http://c.b.a}CalculatorSoap11Binding" soapVersion="1_1" anonymous="optional" definition="https://svn.apache.org/repos/asf/airavata/sandbox/xbaya-web/test/Calculator.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://156.56.179.164:9763/services/Calculator.CalculatorHttpSoap11Endpoint/</con:endpoint><con:endpoint>https://156.56.179.164:9443/services/Calculator.CalculatorHttpsSoap11Endpoint/</con:endpoint></con:endpoints><con:operation id="f169808d-a1cf-4c52-b7f6-5945ccf7aa24" isOneWay="false" action="urn:add" name="add" bindingOperationName="add" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a5236409-e67e-4618-9670-c4ede5188243" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://156.56.179.164:9763/services/Calculator.CalculatorHttpSoap11Endpoint/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:c="http://c.b.a">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <c:add>
+         <!--Optional:-->
+         <c:n1>?</c:n1>
+         <!--Optional:-->
+         <c:n2>?</c:n2>
+      </c:add>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:add"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="0415606b-6d3d-4cf4-b0ac-6b7e832a7f4b" wsaVersion="NONE" name="CalculatorSoap12Binding" type="wsdl" bindingName="{http://c.b.a}CalculatorSoap12Binding" soapVersion="1_2" anonymous="optional" definition="https://svn.apache.org/repos/asf/airavata/sandbox/xbaya-web/test/Calculator.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="https://svn.apache.org/repos/asf/airavata/sandbox/xbaya-web/test/Calculator.wsdl"><con:part><con:url>https://svn.apache.org/repos/asf/airavata/sandbox/xbaya-web/test/Calculator.wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://c.b.a" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ns1="http://org.apache.axis2/xsd" xmlns:ns="http://c.b.a" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/">
+  <wsdl:documentation>Calculator</wsdl:documentation>
+  <wsdl:types>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://c.b.a">
+      <xs:element name="add">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="n1" type="xs:int"/>
+            <xs:element minOccurs="0" name="n2" type="xs:int"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="addResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" type="xs:int"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="addRequest">
+    <wsdl:part name="parameters" element="ns:add"/>
+  </wsdl:message>
+  <wsdl:message name="addResponse">
+    <wsdl:part name="parameters" element="ns:addResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="CalculatorPortType">
+    <wsdl:operation name="add">
+      <wsdl:input message="ns:addRequest" wsaw:Action="urn:add"/>
+      <wsdl:output message="ns:addResponse" wsaw:Action="urn:addResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CalculatorSoap11Binding" type="ns:CalculatorPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="add">
+      <soap:operation soapAction="urn:add" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CalculatorSoap12Binding" type="ns:CalculatorPortType">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="add">
+      <soap12:operation soapAction="urn:add" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CalculatorHttpBinding" type="ns:CalculatorPortType">
+    <http:binding verb="POST"/>
+    <wsdl:operation name="add">
+      <http:operation location="add"/>
+      <wsdl:input>
+        <mime:content type="text/xml" part="parameters"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content type="text/xml" part="parameters"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Calculator">
+    <wsdl:port name="CalculatorHttpsSoap11Endpoint" binding="ns:CalculatorSoap11Binding">
+      <soap:address location="https://156.56.179.164:9443/services/Calculator.CalculatorHttpsSoap11Endpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="CalculatorHttpSoap11Endpoint" binding="ns:CalculatorSoap11Binding">
+      <soap:address location="http://156.56.179.164:9763/services/Calculator.CalculatorHttpSoap11Endpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="CalculatorHttpSoap12Endpoint" binding="ns:CalculatorSoap12Binding">
+      <soap12:address location="http://156.56.179.164:9763/services/Calculator.CalculatorHttpSoap12Endpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="CalculatorHttpsSoap12Endpoint" binding="ns:CalculatorSoap12Binding">
+      <soap12:address location="https://156.56.179.164:9443/services/Calculator.CalculatorHttpsSoap12Endpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="CalculatorHttpsEndpoint" binding="ns:CalculatorHttpBinding">
+      <http:address location="https://156.56.179.164:9443/services/Calculator.CalculatorHttpsEndpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="CalculatorHttpEndpoint" binding="ns:CalculatorHttpBinding">
+      <http:address location="http://156.56.179.164:9763/services/Calculator.CalculatorHttpEndpoint/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://156.56.179.164:9763/services/Calculator.CalculatorHttpSoap12Endpoint/</con:endpoint><con:endpoint>https://156.56.179.164:9443/services/Calculator.CalculatorHttpsSoap12Endpoint/</con:endpoint></con:endpoints><con:operation id="27a73c36-7d24-40e3-861b-4cfe136e4410" isOneWay="false" action="urn:add" name="add" bindingOperationName="add" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d3743e2d-8c40-4ef4-b1d3-f1f60255ec0d" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://156.56.179.164:9763/services/Calculator.CalculatorHttpSoap12Endpoint/</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:c="http://c.b.a">
+   <soap:Header/>
+   <soap:Body>
+      <c:add>
+         <!--Optional:-->
+         <c:n1>?</c:n1>
+         <!--Optional:-->
+         <c:n2>?</c:n2>
+      </c:add>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:add"/></con:call></con:operation></con:interface><con:testSuite id="344d22a3-efbb-4b4e-bab2-d6903c925836" name="CalculatorSoap11Binding TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="0d6976f5-d903-47f1-a510-a0e0dc4ff6e0" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="add TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="80a22a15-a62b-4176-aa22-88f50e60a4b5" name="add"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CalculatorSoap11Binding</con:interface><con:operation>add</con:operation><con:request name="add" id="34f0447a-c55c-4e51-9459-3b5c2aab9177"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://156.56.179.164:9763/services/Calculator.CalculatorHttpSoap11Endpoint/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:c="http://c.b.a">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <c:add>
+         <!--Optional:-->
+         <c:n1>?</c:n1>
+         <!--Optional:-->
+         <c:n2>?</c:n2>
+      </c:add>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="urn:add"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="2fc55d01-1d04-4c12-8d8a-6e1450a1c2a6" activeEnvironment="Default" name="REST PAISES" resourceRoot="" soapui-version="5.6.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="1b4fd18c-3e7d-4d61-8762-fae4092e8284" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://restcountries.eu" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://nodo:8080/</con:endpoint><con:endpoint>https://restcountries.eu</con:endpoint></con:endpoints><con:resource name="Name" path="/rest/v2/name/{name}" id="61403055-a24e-437a-adf7-7a7561d3c953"><con:settings/><con:parameters><con:parameter><con:name>name</con:name><con:value>name</con:value><con:style>TEMPLATE</con:style><con:default>name</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="Name 1" id="11b8a7f7-5d11-4b89-b902-0d05f1a2f79c" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json;charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element xmlns:kir="https://restcountries.eu/rest/v2/name/kirifistan">kir:Fault</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html;charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:request name="Request 1" id="45fa85f6-800a-4bbb-b3cb-d196de42cad9" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://restcountries.eu</con:endpoint><con:request/><con:originalUri>https://restcountries.eu/rest/v2/name/name</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="name" value="France" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>name</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite id="7a6835de-20ee-450c-a55b-af3164a844ff" name="Probar paises"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="d3363a6a-8a79-4ea8-b67b-44903b9c22cc" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Spain" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Obtencion de datos" id="5d291e48-92d7-4e88-aec6-db20583fbb95"><con:settings/><con:config service="https://restcountries.eu" methodName="Name 1" resourcePath="/rest/v2/name/{name}" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Obtencion de datos" id="73bca0f6-bd22-4163-8162-5765f3a1cd68" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://restcountries.eu</con:endpoint><con:request/><con:originalUri>https://restcountries.eu/rest/v2/name/Spain</con:originalUri><con:assertion type="JsonPath Count" id="23f2626f-ac0c-42a4-a248-490f6a4199c2" name="devuelve unico nombre"><con:configuration><path>$.[0].name</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Count" id="65bf6b61-c3f3-462d-87e8-b70ca6a2b948" name="contar traducciones"><con:configuration><path>$.[0].translations.*</path><content>10</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath RegEx Match" id="e51c60e0-8483-4579-97a8-2a5420dc99d8" name="Poblacion entre 40 y 50 millones"><con:configuration><path>$.[0].population</path><content>false</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments><regEx>[4-5][0-9]{7} </regEx></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="71dbf651-224c-4378-bccf-7d288e60ac8f" name="Subregion coincida con SurEuropa"><con:configuration><path>$.[0].subregion</path><content>Southern Europe</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="name" value="Spain" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:loadTest id="fe8f9d57-fc6c-4515-8c16-fbe510d862d7" name="CargaSpain"><con:settings><con:setting id="HttpSettings@close-connections">false</con:setting></con:settings><con:threadCount>5</con:threadCount><con:startDelay>0</con:startDelay><con:sampleInterval>250</con:sampleInterval><con:calculateTPSOnTimePassed>true</con:calculateTPSOnTimePassed><con:resetStatisticsOnThreadCountChange>true</con:resetStatisticsOnThreadCountChange><con:historyLimit>-1</con:historyLimit><con:testLimit>60</con:testLimit><con:limitType>TIME</con:limitType><con:loadStrategy><con:type>Simple</con:type></con:loadStrategy><con:assertion type="Step Status" name="Step Status"><con:configuration><name>Step Status</name><min-requests>100</min-requests><test-step>Obtencion de datos</test-step><max-errors>5</max-errors></con:configuration></con:assertion><con:assertion type="Step Average" name="Step Average"><con:configuration><name>Step Average</name><min-requests>100</min-requests><max-average>1000</max-average><test-step>Obtencion de datos</test-step><max-errors>5</max-errors><sample-interval>20</sample-interval></con:configuration></con:assertion><con:maxAssertionErrors>100</con:maxAssertionErrors><con:cancelExcessiveThreads>true</con:cancelExcessiveThreads><con:strategyInterval>500</con:strategyInterval></con:loadTest><con:properties/></con:testCase><con:testCase id="62b7a67c-dc84-4bc6-94ab-b98a64f33dde" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="desconocido" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="No obtiene pais" id="1ad948b7-bfd5-48fa-ad56-55791830fb3f"><con:settings/><con:config service="https://restcountries.eu" methodName="Name 1" resourcePath="/rest/v2/name/{name}" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="No obtiene pais" id="0f6857f0-976a-41ee-927a-d8525c493967" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://restcountries.eu</con:endpoint><con:request/><con:originalUri>https://restcountries.eu/rest/v2/name/kirifistan</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="f8869e08-e268-49ab-b32f-005e4d7d3a8b" name="Valid HTTP Status Codes"><con:configuration><codes>404</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="name" value="kirifistan" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="244403b7-8803-4d6c-a99d-0f5e84fcd508" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="France" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Obtencion datos Francia" id="69567f1a-489c-4959-9515-34d39d512c82"><con:settings/><con:config service="https://restcountries.eu" methodName="Name 1" resourcePath="/rest/v2/name/{name}" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Obtencion datos Francia" id="3578031a-c05e-49ca-96b3-7a9aa5fac5cf" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://restcountries.eu</con:endpoint><con:request/><con:originalUri>https://restcountries.eu/rest/v2/name/France</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="name" value="France" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:restMockService id="5caa8ba1-2a1a-4b84-9215-f72513020a93" port="8080" path="/" host="nodo"><con:settings/><con:properties/></con:restMockService><con:restMockService id="3879c1ad-f350-482f-90e9-f2162de66e6d" port="10000" path="/" host="nodo" name="MockPaises" docroot=""><con:settings/><con:properties/><con:restMockAction name="/rest/v2/name/France" method="GET" resourcePath="/rest/v2/name/France" id="03c3ff1d-6a9d-41bf-aa5d-37d8fac724d6"><con:settings/><con:defaultResponse xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchPath>/*&#13;
+// Script dispatcher is used to select a response based on the incoming request.&#13;
+// Here are few examples showing how to match based on path, query param, header and body&#13;
+&#13;
+// Match based on path&#13;
+def requestPath = mockRequest.getPath()&#13;
+log.info "Path: "+ requestPath&#13;
+&#13;
+if( requestPath.contains("json") )&#13;
+{&#13;
+    // return the name of the response you want to dispatch&#13;
+    return "JSON Response"&#13;
+}&#13;
+&#13;
+&#13;
+// Match based on query parameter&#13;
+def queryString = mockRequest.getRequest().getQueryString()&#13;
+log.info "QueryString: " + queryString&#13;
+&#13;
+if( queryString.contains("stockholm") )&#13;
+{&#13;
+    // return the name of the response you want to dispatch&#13;
+    return "Response Stockholm"&#13;
+}&#13;
+else if( queryString.contains("london") )&#13;
+{&#13;
+    // return the name of the response you want to dispatch&#13;
+    return "Response London"&#13;
+}&#13;
+&#13;
+&#13;
+// Match based on header&#13;
+def acceptEncodingHeaderList = mockRequest.getRequestHeaders().get("Accept-Encoding")&#13;
+log.info "AcceptEncoding Header List: " + acceptEncodingHeaderList&#13;
+&#13;
+if( acceptEncodingHeaderList.contains("gzip,deflate") )&#13;
+{&#13;
+    // return the name of the response you want to dispatch&#13;
+    return "GZiped Response"&#13;
+}&#13;
+&#13;
+&#13;
+// Match based on body&#13;
+def requestBody = mockRequest.getRequestContent()&#13;
+log.info "Request body: " + requestBody&#13;
+&#13;
+if( requestBody.contains("some data") )&#13;
+{&#13;
+    // return the name of the response you want to dispatch&#13;
+    return "Response N"&#13;
+}&#13;
+*/&#13;
+</con:dispatchPath><con:response name="Response 1" id="6f3a3f13-5e74-4e8b-9739-93a0cf372f48" httpResponseStatus="200" mediaType="application/json"><con:settings/><con:responseContent>[{
+   "name": "France",
+   "topLevelDomain": [".fr"],
+   "alpha2Code": "FR",
+   "alpha3Code": "FRA",
+   "callingCodes": ["33"],
+   "capital": "Paris",
+   "altSpellings":    [
+      "FR",
+      "French Republic",
+      "République française"
+   ],
+   "region": "Europe",
+   "subregion": "Western Europe",
+   "population": 66710000,
+   "latlng":    [
+      46,
+      2
+   ],
+   "demonym": "French",
+   "area": 640679,
+   "gini": 32.7,
+   "timezones":    [
+      "UTC-10:00",
+      "UTC-09:30",
+      "UTC-09:00",
+      "UTC-08:00",
+      "UTC-04:00",
+      "UTC-03:00",
+      "UTC+01:00",
+      "UTC+03:00",
+      "UTC+04:00",
+      "UTC+05:00",
+      "UTC+11:00",
+      "UTC+12:00"
+   ],
+   "borders":    [
+      "AND",
+      "BEL",
+      "DEU",
+      "ITA",
+      "LUX",
+      "MCO",
+      "ESP",
+      "CHE"
+   ],
+   "nativeName": "France",
+   "numericCode": "250",
+   "currencies": [   {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€"
+   }],
+   "languages": [   {
+      "iso639_1": "fr",
+      "iso639_2": "fra",
+      "name": "French",
+      "nativeName": "français"
+   }],
+   "translations":    {
+      "de": "Frankreich",
+      "es": "Francia",
+      "fr": "France",
+      "ja": "フランス",
+      "it": "Francia",
+      "br": "França",
+      "pt": "França",
+      "nl": "Frankrijk",
+      "hr": "Francuska",
+      "fa": "فرانسه"
+   },
+   "flag": "https://restcountries.eu/data/fra.svg",
+   "regionalBlocs": [   {
+      "acronym": "EU",
+      "name": "European Union",
+      "otherAcronyms": [],
+      "otherNames": []
+   }],
+   "cioc": "FRA"
+}]</con:responseContent></con:response></con:restMockAction><con:restMockAction name="/rest/v2/name/Spain" method="GET" resourcePath="/rest/v2/name/Spain" id="3f0db462-4d0f-4d54-8017-bcd83c589f76"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchPath>/*&#13;
+// Script dispatcher is used to select a response based on the incoming request.&#13;
+// Here are few examples showing how to match based on path, query param, header and body&#13;
+&#13;
+// Match based on path&#13;
+def requestPath = mockRequest.getPath()&#13;
+log.info "Path: "+ requestPath&#13;
+&#13;
+if( requestPath.contains("json") )&#13;
+{&#13;
+    // return the name of the response you want to dispatch&#13;
+    return "JSON Response"&#13;
+}&#13;
+&#13;
+&#13;
+// Match based on query parameter&#13;
+def queryString = mockRequest.getRequest().getQueryString()&#13;
+log.info "QueryString: " + queryString&#13;
+&#13;
+if( queryString.contains("stockholm") )&#13;
+{&#13;
+    // return the name of the response you want to dispatch&#13;
+    return "Response Stockholm"&#13;
+}&#13;
+else if( queryString.contains("london") )&#13;
+{&#13;
+    // return the name of the response you want to dispatch&#13;
+    return "Response London"&#13;
+}&#13;
+&#13;
+&#13;
+// Match based on header&#13;
+def acceptEncodingHeaderList = mockRequest.getRequestHeaders().get("Accept-Encoding")&#13;
+log.info "AcceptEncoding Header List: " + acceptEncodingHeaderList&#13;
+&#13;
+if( acceptEncodingHeaderList.contains("gzip,deflate") )&#13;
+{&#13;
+    // return the name of the response you want to dispatch&#13;
+    return "GZiped Response"&#13;
+}&#13;
+&#13;
+&#13;
+// Match based on body&#13;
+def requestBody = mockRequest.getRequestContent()&#13;
+log.info "Request body: " + requestBody&#13;
+&#13;
+if( requestBody.contains("some data") )&#13;
+{&#13;
+    // return the name of the response you want to dispatch&#13;
+    return "Response N"&#13;
+}&#13;
+*/&#13;
+</con:dispatchPath><con:response name="Response 1" id="dd296c5d-4b26-400c-90d0-93c67119e6a0" httpResponseStatus="200" mediaType="application/json"><con:settings/><con:responseContent>[{
+   "name": "Spain",
+   "region": "Europe",
+   "subregion": "Western Europe",
+   "translations":    {
+      "de": "Frankreich",
+      "es": "Francia",
+      "fr": "France",
+      "ja": "フランス",
+      "it": "Francia",
+      "br": "França",
+      "pt": "França",
+      "nl": "Frankrijk",
+      "hr": "Francuska",
+      "fa": "فرانسه"
+   }
+}]</con:responseContent></con:response></con:restMockAction></con:restMockService><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

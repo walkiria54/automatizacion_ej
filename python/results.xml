@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites>
+    <testsuite name="pytest" errors="0" failures="0" skipped="0" tests="6" time="0.114"
+               timestamp="2021-01-21T12:42:42.570028" hostname="nodo">
+        <testcase classname="test_prueba1.Test" name="test_es_impar" time="0.002"/>
+        <testcase classname="test_prueba1.Test" name="test_es_impar_bool" time="0.001"/>
+        <testcase classname="test_prueba1.Test" name="test_mayuscular" time="0.001"/>
+        <testcase classname="test_prueba1.Test" name="test_num_palabras" time="0.001"/>
+        <testcase classname="test_prueba1.Test" name="test_num_palabras0" time="0.001"/>
+        <testcase classname="test_prueba1.Test" name="test_num_palabras2" time="0.001"/>
+    </testsuite>
+</testsuites>

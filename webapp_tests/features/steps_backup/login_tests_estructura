@@ -1,0 +1,18 @@
+# Scenario: Validar mensaje de error al acceder en la  app con datos incorrectos
+from behave import given, when, then
+@given('que tengo mi aplicación instalada y funcionando en la url \"{url}\"')
+def step_impl(context, url):
+    assert True
+
+@when('un usuario registrado intenta acceder a la aplicación con usuario \"{user}\" y password  \"{pwd}\"incorrecto')
+def step_impl(context, user, pwd):
+    assert user== 'xxx'
+@when('al dar click en boton con texto login \"{btn_text}\"')
+def step_impl(context, btn_text):
+    assert True
+@then('la pantalla de login no le debe permitir \"{txtaccede}\"el acceso al usuario')
+def step_impl(context,txtaccede):
+    assert True
+@then('genera mensaje de error \"{errormsg}\"Mensaje de error')
+def step_impl(context, errormsg):
+    assert True

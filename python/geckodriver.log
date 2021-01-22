@@ -1,0 +1,378 @@
+1610024268674	geckodriver	INFO	Listening on 127.0.0.1:55025
+1610024268695	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile9mZoUB"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1610024278134	Marionette	INFO	Listening on port 43675
+1610024278284	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610024287877	Marionette	INFO	Stopped listening on port 43675
+1610093637471	geckodriver	INFO	Listening on 127.0.0.1:60645
+1610093638461	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileP6rsrK"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1610093647533	Marionette	INFO	Listening on port 35903
+1610093647670	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610093696927	geckodriver	INFO	Listening on 127.0.0.1:40879
+1610093696948	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiledw6O3X"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1610093707340	Marionette	INFO	Listening on port 36791
+1610093707717	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610093727704	Marionette	INFO	Stopped listening on port 36791
+1610093765148	geckodriver	INFO	Listening on 127.0.0.1:37449
+1610093766159	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilefGxqJc"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1610093775060	Marionette	INFO	Listening on port 44837
+1610093775255	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610093785392	Marionette	INFO	Stopped listening on port 44837
+1610093820594	Marionette	INFO	Stopped listening on port 35903
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1610093827771	geckodriver	INFO	Listening on 127.0.0.1:41041
+1610093827789	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilenxwgUO"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1610093836092	Marionette	INFO	Listening on port 42467
+1610093836386	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610093857257	Marionette	INFO	Stopped listening on port 42467
+1610093881327	geckodriver	INFO	Listening on 127.0.0.1:34707
+1610093881356	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileZukiwE"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1610093890428	Marionette	INFO	Listening on port 46629
+1610093890603	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610093910660	Marionette	INFO	Stopped listening on port 46629
+1610095226720	geckodriver	INFO	Listening on 127.0.0.1:38077
+1610095226733	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileKTBTVm"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1610095235945	Marionette	INFO	Listening on port 36327
+1610095236103	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610095301430	geckodriver	INFO	Listening on 127.0.0.1:40001
+1610095301447	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileJf8v1f"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1610095309370	Marionette	INFO	Listening on port 36253
+1610095309491	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610095385158	Marionette	INFO	Stopped listening on port 36253
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1610095386704	Marionette	INFO	Stopped listening on port 36327
+1610095522541	geckodriver	INFO	Listening on 127.0.0.1:51631
+1610095522584	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileG4KKdF"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1610095532745	Marionette	INFO	Listening on port 38541
+1610095532860	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610095580424	geckodriver	INFO	Listening on 127.0.0.1:48083
+1610095580439	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilevM3uqw"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1610095601096	Marionette	INFO	Listening on port 37753
+1610095601642	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610095607342	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1610095649989	Marionette	INFO	Stopped listening on port 37753
+1610095651998	Marionette	INFO	Stopped listening on port 38541
+1610095697868	geckodriver	INFO	Listening on 127.0.0.1:49391
+1610095697887	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileFHom48"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1610095707017	Marionette	INFO	Listening on port 44875
+1610095707189	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610095781532	Marionette	INFO	Stopped listening on port 44875
+1610095812687	geckodriver	INFO	Listening on 127.0.0.1:53963
+1610095812701	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileE7NHdQ"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1610095821260	Marionette	INFO	Listening on port 38845
+1610095821369	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://devtools/client/inspector/rules/utils/utils.js, line 186: TypeError: rule is undefined
+JavaScript error: resource://devtools/client/inspector/rules/utils/utils.js, line 186: TypeError: rule is undefined
+JavaScript error: resource://devtools/client/inspector/rules/utils/utils.js, line 186: TypeError: rule is undefined
+console.warn: "Resource  of root-node was not found."
+console.error: "Error while calling actor 'pagestyle's method 'getApplied'" "node is null"
+console.error: "getApplied@resource://devtools/server/actors/page-style.js:573:5\nhandler@resource://devtools/shared/protocol/Actor.js:172:37\nonPacket@resource://devtools/server/devtools-server-connection.js:379:58\nreceiveMessage@resource://devtools/shared/transport/child-transport.js:68:16\n"
+console.error: (new Error("Protocol error (TypeError): node is null from: server0.conn0.child3/pagestyle26 (resource://devtools/server/actors/page-style.js:573:5)", "resource://devtools/shared/protocol/Front.js", 361))
+console.error: (new Error("Protocol error (TypeError): node is null from: server0.conn0.child3/pagestyle26 (resource://devtools/server/actors/page-style.js:573:5)", "resource://devtools/shared/protocol/Front.js", 361))
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:226:34
+emit@resource://devtools/shared/event-emitter.js:172:18
+emit@resource://devtools/shared/event-emitter.js:324:18
+getMutations@resource://devtools/client/fronts/walker.js:405:10
+
+console.warn: "Async method failed in safeAsyncMethod" (new Error("Connection closed, pending request to server0.conn0.child3/domwalker25, type cancelPick failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:288:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:46:19\ncancelPick@resource://devtools/client/fronts/walker.js:617:18\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\n_onInspectorFrontDestroyed@resource://devtools/client/inspector/node-picker.js:112:18\n_emit@resource://devtools/shared/event-emitter.js:226:34\nemit@resource://devtools/shared/event-emitter.js:172:18\nemit@resource://devtools/shared/event-emitter.js:324:18\nunmanage@resource://devtools/shared/protocol/Front.js:168:37\ndestroy@resource://devtools/shared/protocol/Pool.js:167:14\nbaseFrontClassDestroy@resource://devtools/shared/protocol/Front.js:103:13\ndestroy@resource://devtools/shared/protocol/Front.js:67:10\ndestroy@resource://devtools/client/fronts/inspector.js:96:11\n_destroyTarget@resource://devtools/client/fronts/targets/target-mixin.js:604:17\n", "resource://devtools/shared/protocol/Front.js", 99))
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1610095967485	Marionette	INFO	Stopped listening on port 38845
+1610095976963	geckodriver	INFO	Listening on 127.0.0.1:54147
+1610095976983	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilewU6lXo"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1610095986046	Marionette	INFO	Listening on port 46395
+1610095986389	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://devtools/client/fronts/inspector.js, line 180: TypeError: right-hand side of 'in' should be an object, got undefined
+1610096047585	Marionette	INFO	Stopped listening on port 46395
+1610096175382	geckodriver	INFO	Listening on 127.0.0.1:45739
+1610096175397	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileL3rqUC"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1610096185216	Marionette	INFO	Listening on port 43057
+1610096185369	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610096205270	Marionette	INFO	Stopped listening on port 43057
+1610096218031	geckodriver	INFO	Listening on 127.0.0.1:49953
+1610096218054	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilehgyD4L"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1610096227542	Marionette	INFO	Listening on port 36105
+1610096227732	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610096308838	geckodriver	INFO	Listening on 127.0.0.1:40523
+1610096308853	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileFx18dC"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1610096316666	Marionette	INFO	Listening on port 44419
+1610096316779	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.warn: "Resource  of root-node was not found."
+console.error: "Error while calling actor 'pagestyle's method 'getLayout'" "node is null"
+console.error: "getLayout@resource://devtools/server/actors/page-style.js:1005:5\nhandler@resource://devtools/shared/protocol/Actor.js:172:37\nonPacket@resource://devtools/server/devtools-server-connection.js:379:58\nreceiveMessage@resource://devtools/shared/transport/child-transport.js:68:16\n"
+console.error: "Error while calling actor 'pagestyle's method 'getApplied'" "node is null"
+console.error: "getApplied@resource://devtools/server/actors/page-style.js:573:5\nhandler@resource://devtools/shared/protocol/Actor.js:172:37\nonPacket@resource://devtools/server/devtools-server-connection.js:379:58\nreceiveMessage@resource://devtools/shared/transport/child-transport.js:68:16\n"
+console.error: (new Error("Protocol error (TypeError): node is null from: server0.conn0.child3/pagestyle26 (resource://devtools/server/actors/page-style.js:1005:5)", "resource://devtools/shared/protocol/Front.js", 361))
+console.error: (new Error("Protocol error (TypeError): node is null from: server0.conn0.child3/pagestyle26 (resource://devtools/server/actors/page-style.js:573:5)", "resource://devtools/shared/protocol/Front.js", 361))
+console.error: (new Error("Protocol error (TypeError): node is null from: server0.conn0.child3/pagestyle26 (resource://devtools/server/actors/page-style.js:573:5)", "resource://devtools/shared/protocol/Front.js", 361))
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:226:34
+emit@resource://devtools/shared/event-emitter.js:172:18
+emit@resource://devtools/shared/event-emitter.js:324:18
+getMutations@resource://devtools/client/fronts/walker.js:405:10
+
+console.error: "Error while calling actor 'pagestyle's method 'getLayout'" "node is null"
+console.error: "getLayout@resource://devtools/server/actors/page-style.js:1005:5\nhandler@resource://devtools/shared/protocol/Actor.js:172:37\nonPacket@resource://devtools/server/devtools-server-connection.js:379:58\nreceiveMessage@resource://devtools/shared/transport/child-transport.js:68:16\n"
+console.error: (new Error("Protocol error (TypeError): node is null from: server0.conn0.child3/pagestyle26 (resource://devtools/server/actors/page-style.js:1005:5)", "resource://devtools/shared/protocol/Front.js", 361))
+1610096431084	Marionette	INFO	Stopped listening on port 36105
+1610096433250	Marionette	INFO	Stopped listening on port 44419
+1610096458782	geckodriver	INFO	Listening on 127.0.0.1:37249
+1610096459791	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilepx3Ejy"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1610096467604	Marionette	INFO	Listening on port 40269
+1610096467729	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610096516012	Marionette	INFO	Stopped listening on port 40269
+1610096555537	geckodriver	INFO	Listening on 127.0.0.1:46663
+1610096555552	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilegaQqjh"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1610096563600	Marionette	INFO	Listening on port 40361
+1610096563791	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610096573387	Marionette	INFO	Stopped listening on port 40361
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1610096578533	geckodriver	INFO	Listening on 127.0.0.1:53961
+1610096578558	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileqdfs0b"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1610096586491	Marionette	INFO	Listening on port 46011
+1610096586602	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610096595870	Marionette	INFO	Stopped listening on port 46011
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1610096603482	geckodriver	INFO	Listening on 127.0.0.1:55775
+1610096603506	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileWFOCCK"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1610096610928	Marionette	INFO	Listening on port 46611
+1610096611062	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610096620253	Marionette	INFO	Stopped listening on port 46611
+1610096624486	geckodriver	INFO	Listening on 127.0.0.1:39081
+1610096624501	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilegrF0Z5"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1610096632234	Marionette	INFO	Listening on port 34073
+1610096632340	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610096640292	Marionette	INFO	Stopped listening on port 34073
+1610099350092	geckodriver	INFO	Listening on 127.0.0.1:42237
+1610099351075	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileV3AASK"
+*** You are running in headless mode.
+
+(firefox:5768): GLib-GObject-WARNING **: 10:49:12.687: invalid (NULL) pointer instance
+
+(firefox:5768): GLib-GObject-CRITICAL **: 10:49:12.688: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib/firefox/firefox:5843): GLib-GObject-WARNING **: 10:49:14.619: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:5843): GLib-GObject-CRITICAL **: 10:49:14.620: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib/firefox/firefox:5859): GLib-GObject-WARNING **: 10:49:14.881: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:5859): GLib-GObject-CRITICAL **: 10:49:14.881: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:5942): GLib-GObject-WARNING **: 10:49:18.004: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:5942): GLib-GObject-CRITICAL **: 10:49:18.004: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610099358798	Marionette	INFO	Listening on port 41039
+1610099358917	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610110599015	geckodriver	INFO	Listening on 127.0.0.1:55773
+1610110600006	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilekkQkYU"
+*** You are running in headless mode.
+
+(firefox:4877): GLib-GObject-WARNING **: 13:56:42.768: invalid (NULL) pointer instance
+
+(firefox:4877): GLib-GObject-CRITICAL **: 13:56:42.768: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib/firefox/firefox:4928): GLib-GObject-WARNING **: 13:56:44.967: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:4928): GLib-GObject-CRITICAL **: 13:56:44.967: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib/firefox/firefox:4944): GLib-GObject-WARNING **: 13:56:45.439: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:4944): GLib-GObject-CRITICAL **: 13:56:45.439: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1610110607055	geckodriver	INFO	Listening on 127.0.0.1:44695
+1610110607078	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileJPlvXI"
+*** You are running in headless mode.
+
+(firefox:5018): GLib-GObject-WARNING **: 13:56:49.714: invalid (NULL) pointer instance
+
+(firefox:5018): GLib-GObject-CRITICAL **: 13:56:49.714: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib/firefox/firefox:5076): GLib-GObject-WARNING **: 13:56:50.441: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:5076): GLib-GObject-CRITICAL **: 13:56:50.442: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610110611542	Marionette	INFO	Listening on port 43625
+1610110611686	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:5107): GLib-GObject-WARNING **: 13:56:52.290: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:5107): GLib-GObject-CRITICAL **: 13:56:52.290: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib/firefox/firefox:5129): GLib-GObject-WARNING **: 13:56:53.018: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:5129): GLib-GObject-CRITICAL **: 13:56:53.018: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:5234): GLib-GObject-WARNING **: 13:56:57.071: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:5234): GLib-GObject-CRITICAL **: 13:56:57.071: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610110618137	Marionette	INFO	Listening on port 40335
+1610110618327	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1610110793418	geckodriver	INFO	Listening on 127.0.0.1:39549
+1610110793442	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileGfh7Ol"
+*** You are running in headless mode.
+
+(firefox:6130): GLib-GObject-WARNING **: 13:59:56.002: invalid (NULL) pointer instance
+
+(firefox:6130): GLib-GObject-CRITICAL **: 13:59:56.002: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib/firefox/firefox:6274): GLib-GObject-WARNING **: 13:59:58.977: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:6274): GLib-GObject-CRITICAL **: 13:59:58.977: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib/firefox/firefox:6293): GLib-GObject-WARNING **: 13:59:59.537: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:6293): GLib-GObject-CRITICAL **: 13:59:59.537: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:6374): GLib-GObject-WARNING **: 14:00:04.180: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:6374): GLib-GObject-CRITICAL **: 14:00:04.181: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610110805453	Marionette	INFO	Listening on port 35237
+1610110805647	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610110987422	geckodriver	INFO	Listening on 127.0.0.1:45411
+1610110988431	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilePtKmI6"
+*** You are running in headless mode.
+
+(firefox:8753): GLib-GObject-WARNING **: 14:03:10.156: invalid (NULL) pointer instance
+
+(firefox:8753): GLib-GObject-CRITICAL **: 14:03:10.157: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib/firefox/firefox:9832): GLib-GObject-WARNING **: 14:03:12.053: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:9832): GLib-GObject-CRITICAL **: 14:03:12.053: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib/firefox/firefox:9918): GLib-GObject-WARNING **: 14:03:12.638: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:9918): GLib-GObject-CRITICAL **: 14:03:12.638: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:10036): GLib-GObject-WARNING **: 14:03:16.525: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:10036): GLib-GObject-CRITICAL **: 14:03:16.525: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610110997518	Marionette	INFO	Listening on port 33761
+1610110997632	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610111179440	geckodriver	INFO	Listening on 127.0.0.1:34485
+1610111179456	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilefqL1DV"
+*** You are running in headless mode.
+
+(firefox:11141): GLib-GObject-WARNING **: 14:06:21.674: invalid (NULL) pointer instance
+
+(firefox:11141): GLib-GObject-CRITICAL **: 14:06:21.675: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib/firefox/firefox:11214): GLib-GObject-WARNING **: 14:06:23.610: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:11214): GLib-GObject-CRITICAL **: 14:06:23.611: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib/firefox/firefox:11230): GLib-GObject-WARNING **: 14:06:24.047: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:11230): GLib-GObject-CRITICAL **: 14:06:24.047: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:11305): GLib-GObject-WARNING **: 14:06:26.981: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:11305): GLib-GObject-CRITICAL **: 14:06:26.981: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610111188236	Marionette	INFO	Listening on port 44387
+1610111188479	Marionette	WARN	TLS certificate errors will be ignored for this session
+1611224527783	geckodriver	INFO	Listening on 127.0.0.1:39579
+1611224527799	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileTu9JeR"
+*** You are running in headless mode.
+
+(firefox:41313): GLib-GObject-WARNING **: 11:22:09.435: invalid (NULL) pointer instance
+
+(firefox:41313): GLib-GObject-CRITICAL **: 11:22:09.438: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib/firefox/firefox:41537): GLib-GObject-WARNING **: 11:22:10.718: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:41537): GLib-GObject-CRITICAL **: 11:22:10.718: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib/firefox/firefox:41558): GLib-GObject-WARNING **: 11:22:11.379: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:41558): GLib-GObject-CRITICAL **: 11:22:11.379: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:41616): GLib-GObject-WARNING **: 11:22:13.459: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:41616): GLib-GObject-CRITICAL **: 11:22:13.459: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1611224534130	Marionette	INFO	Listening on port 35009
+1611224534203	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
